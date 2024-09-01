@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('table_globals', function (Blueprint $table) {
+        Schema::create('perspectives', function (Blueprint $table) {
             $table->id();
-            $table->string('data_type');
-            $table->string('data_cat');
-            $table->string('cat_name');
-            $table->string('cat_desc')->nullable();
+            $table->string('perspective');
+            $table->unsignedBigInteger('labos_id');
+            $table->foreign('labos_id')->references('id')->on('labos')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('table_globals');
+        Schema::dropIfExists('perspectives');
     }
 };

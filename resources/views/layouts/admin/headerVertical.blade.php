@@ -29,7 +29,7 @@
 
           name="person"></ion-icon>
               <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >Gestion des comptes</span
+                >Laboratoires</span
               >
               <ion-icon class="w-4 h-4" name="chevron-down"></ion-icon>
 
@@ -37,16 +37,16 @@
             <ul id="dropdown-pages" class="hidden py-2 space-y-2">
               <li>
                 <a
-                  href="{{route('admin.ajoutetudiant')}}"
+                  href="{{route('ajouterLaboratoire')}}"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
-                  >Gestion des comptes étudiants</a
+                  >Ajouter un Laboratoire</a
                 >
               </li>
               <li>
                 <a
-                  href="{{route('admin.ajoutprofesseur')}}"
+                  href="{{route('labos.index')}}"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
-                  >Gestion des comptes enseignants</a
+                  >Liste des Laboratoires</a
                 >
               </li>
               <li>

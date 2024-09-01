@@ -1,0 +1,98 @@
+body {
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 25px;
+    width: 35%;
+    border-bottom: 4px solid #00861D; 
+    padding-bottom: 5px;
+    color: #00861D;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.laboratoire_container {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    border-left: 10px solid #00861D;
+    box-shadow: 0px 0px 15.3px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease; 
+    transition: transform 0.3s ease;
+}
+
+.laboratoire_container img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.laboratoire_desc {
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titre, .description {
+    margin-bottom: 1px;
+    color: #000;
+    font-family: Montserrat;
+}
+
+.titre {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.laboratoire_direction {
+    display: flex;
+    align-items: center;
+}
+
+.directeur, .nom_directeur {
+    font-family: Montserrat;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.directeur {
+    color: #00861D;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.nom_directeur {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.laboratoire_container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 5px 15.3px 2px rgba(0, 0, 0, 0,15);
+
+}
+
+.laboratoire_container:hover img {
+    transform: scale(1.05); 
+}

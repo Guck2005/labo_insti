@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('theme_de_recherches', function (Blueprint $table) {
+        Schema::create('missions', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
-            $table->string('nom');
+            $table->string('mission');
+            $table->unsignedBigInteger('labos_id');
+            $table->foreign('labos_id')->references('id')->on('labos')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('theme_de_recherches');
+        Schema::dropIfExists('missions');
     }
 };

@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin: 5% 0;
+    padding: 0;
+}
+
+form {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bouton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.w-[100%] {
+    max-width: 100%;
+}
+
+.mx-[0%] {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Ajout de styles spécifiques pour le formulaire */
+
+.ajouter {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.entete {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entete1 input {
+    width: 80%;
+}
+
+.entete2 label {
+    width: 60%;
+}
+
+.entete2 {
+    width: 40%;
+    margin-left: 30px;
+}
+
+.mission,
+.technologie_innovation,
+.impact,
+.perspective {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#missionsSection,
+#techSection,
+#impactSection,
+#perspectiveSection {
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+.bouton button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none; /* Ajoutez cette ligne pour supprimer la bordure par défaut du bouton */
+}
+
+
+/* Ajout de styles pour les checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}

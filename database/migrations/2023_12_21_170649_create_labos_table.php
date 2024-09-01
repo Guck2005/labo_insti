@@ -11,11 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reseau_users', function (Blueprint $table) {
+        Schema::create('labos', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('reseau_ids');
-            $table->string('liens');
+            $table->string('labo_name');
+            $table->unsignedBigInteger('type_labo');
+            $table->foreign('type_labo')->references('id')->on('globals');
+            $table->string('directeur_labo');
+            $table->string('description_labo');
+            $table->string('photo_labo');
             $table->timestamps();
         });
     }
@@ -25,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reseau_users');
+        Schema::dropIfExists('labos');
     }
 };
