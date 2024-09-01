@@ -1,5 +1,8 @@
+
+
+
 ```markdown
-# Module Labo INSTI
+# Projet Laravel
 
 ## Installation des dépendances
 
@@ -55,3 +58,4 @@ Suivez ces étapes pour vous assurer que toutes les dépendances sont installée
 2. **npm install** : Télécharge les dépendances JavaScript définies dans le fichier `package.json`.
 3. **npm run dev** : Démarre le serveur Vite pour le développement.
 4. **npm run build** : Compile les fichiers pour un déploiement en production.
+
